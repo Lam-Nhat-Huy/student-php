@@ -48,8 +48,6 @@ if (isset($_POST['update_student'])) {
 }
 
 // xóa thông tin sinh viên
-
-
 if (isset($_POST['delete_student'])) {
     $student_id = mysqli_real_escape_string($conn, $_POST['delete_student']);
     $query = "DELETE FROM students WHERE id = $student_id";
