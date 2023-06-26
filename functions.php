@@ -25,6 +25,7 @@ if (isset($_POST['save_student'])) {
         exit(0);
     }
 }
+
 // Thay đổi dữ liệu vào database
 if (isset($_POST['update_student'])) {
     $student_id = mysqli_real_escape_string($conn, $_POST['student_id']);
