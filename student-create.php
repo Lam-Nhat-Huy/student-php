@@ -43,6 +43,10 @@ session_start();
                                 <input type="text" class="form-control" name="course">
                             </div>
                             <div class="mb-3">
+                                <label for="">Address: </label>
+                                <input type="text" class="form-control" name="course">
+                            </div>
+                            <div class="mb-3">
                                 <label for="">Time</label>
                                 <input type="text" class="form-control" name="update_time">
                             </div>

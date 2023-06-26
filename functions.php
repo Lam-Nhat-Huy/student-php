@@ -8,11 +8,10 @@ if (isset($_POST['save_student'])) {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $phone = mysqli_real_escape_string($conn, $_POST['phone']);
     $course = mysqli_real_escape_string($conn, $_POST['course']);
-    $update_time = mysqli_real_escape_string($conn, $_POST['update_time']);
     // truy vấn 
-    $query = "INSERT INTO students (name, email, phone, course, update_time) VALUES ('$name', '$email', '$phone', '$course', '$update_time')";
+    $query = "INSERT INTO students (name, email, phone, course) VALUES ('$name', '$email', '$phone', '$course')";
     // Khi trường có dữ liệu mới cho truy vấn
-    if (!empty($name) && !empty($email) && !empty($phone) && !empty($course) && !empty($update_time)) {
+    if (!empty($name) && !empty($email) && !empty($phone) && !empty($course)) {
         $sql = mysqli_query($conn, $query);
     }
     // Thông báo khi truy vấn thành công

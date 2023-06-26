@@ -35,7 +35,6 @@ require './database.php';
                                     <td>Email: </td>
                                     <td>Phone: </td>
                                     <td>Course: </td>
-                                    <td>Time: </td>
                                     <td>Acction: </td>
                                 </tr>
                             </thead>
@@ -52,7 +51,6 @@ require './database.php';
                                     <td><?= $row['email'] ?></td>
                                     <td><?= $row['phone'] ?></td>
                                     <td><?= $row['course'] ?></td>
-                                    <td><?= $row['update_time'] ?></td>
                                     <td class="d-flex justify-content-evenly">
                                         <a href="./student-view.php?id=<?= $row['id'] ?>"
                                             class="btn btn-info btn-sm">View</a>
